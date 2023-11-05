@@ -67,6 +67,12 @@ vim.opt.rtp:prepend(lazypath)
 require('lazy').setup({
   -- NOTE: First, some plugins that don't require any configuration
 
+  -- Kitty terminal related
+  {
+    'knubie/vim-kitty-navigator', 
+    build = 'cp ./*.py ~/.config/kitty/'
+  },
+
   -- Git related plugins
   'tpope/vim-fugitive',
   'tpope/vim-rhubarb',
